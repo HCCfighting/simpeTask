@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        .wrap{
+            height: 500px;
+            width: 600px;
+            margin: 0 auto;
+        }
+        #ul1,#ul2{
+            height: 400px;
+            width: 200px;
+            border: 1px solid red;
+            float: left;
+            margin-left: 60px;
+            position: relative;
+        }
+        #ul1 li{
+            width: 200px;
+            height: 50px;
+            background: red;
+            border: 1px solid black;
+            position: absolute;
+
+        }
+        #ul2 li{
+            width: 200px;
+            height: 50px;
+            background: red;
+            border: 1px solid black;
+            position: absolute;
+        }
+        #box{
+            height: 100px;
+            width: 100px;
+            background: black;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<!-- - 实现一个可拖拽交互的界面-->
+<!-- - 如示例图，左右两侧各有一个容器，里面的选项可以通过拖拽来左右移动-->
+<!-- - 被选择拖拽的容器在拖拽过程后，在原容器中消失，跟随鼠标移动-->
+<!-- - 注意拖拽释放后，要添加到准确的位置-->
+<!-- - 拖拽到什么位置认为是可以添加到新容器的规则自己定-->
+<!-- - 注意交互中良好的用户体验和使用引导-->
+    <div class="wrap">
+        <ul id="ul1">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul id="ul2">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script src="js/task0002_5.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container {
+            width: 1024px;
+            height: 600px;
+            overflow: hidden;
+            position: relative;
+            margin: 20px auto;
+        }
+        #box {
+            height: 600px;
+            position: absolute;
+            left: 0;
+        }
+        #box li {
+            width: 1024px;
+            height: 600px;
+            list-style: none;
+            float: left;
+        }
+        #circle-box {
+            width: 100px;
+            height: 12px;
+            overflow: hidden;
+            position: absolute;
+            bottom: 25px;
+            left: 450px;
+        }
+        #circle-box li {
+            list-style: none;
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .showCircle {
+            background-color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+<!-- - 图片数量及URL均在HTML中写好-->
+<!-- - 可以配置轮播的顺序（正序、逆序）、是否循环、间隔时长-->
+<!-- - 图片切换的动画要流畅-->
+<!-- - 在轮播图下方自动生成对应图片的小点，点击小点，轮播图自动动画切换到对应的图片-->
+<!--还有很多bug待改进-->
+    <div id="container">
+        <ul id="box">
+            <li><img src="img/1.jpg"></li>
+            <li><img src="img/2.jpg"></li>
+            <li><img src="img/3.jpg"></li>
+            <li><img src="img/4.jpg"></li>
+        </ul>
+        <ul id="circle-box">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script src="js/util.js"></script>
+    <script type="text/javascript" src="js/task0002_3.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .input-div input {
+            display: block;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 200px;
+            border: 1px solid #888;
+            outline: none;
+            padding: 3px 5px;
+            margin: 0;
+        }
+        .input-div ul {
+            display: none;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 200px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        .input-div li {
+            padding: 3px 5px;
+            cursor: pointer;
+        }
+
+        .input-div li span{
+            color: #A73535;
+        }
+
+        .input-div .active {
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+<!-- - 允许使用鼠标点击选中提示栏中的某个选项-->
+<!-- - 允许使用键盘上下键来选中提示栏中的某个选项，回车确认选中-->
+<!-- - 选中后，提示内容变更到输入框中-->
+    <div class="container input-div">
+        <input type="text">
+        <ul> </ul>
+    </div>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/task0002_4.js"></script>
+</body>
+</html>
